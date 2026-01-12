@@ -1,0 +1,47 @@
+# ESP-IDF SDK Configuration Defaults
+#
+# 将此文件复制到项目根目录并重命名为 sdkconfig
+# 或使用: idf.py menuconfig 进行图形化配置
+
+# ==================== WiFi 配置 ====================
+CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM=10
+CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM=32
+CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM=32
+CONFIG_ESP32_WIFI_AMPDU_TX_ENABLED=y
+CONFIG_ESP32_WIFI_AMPDU_RX_ENABLED=y
+
+# ==================== 蓝牙配置 ====================
+# CONFIG_BT_ENABLED=y
+# CONFIG_BT_BLUEDROID_ENABLED=y
+# CONFIG_BT_BLE_ENABLED=y
+
+# ==================== FreeRTOS 配置 ====================
+CONFIG_FREERTOS_HZ=1000
+
+# ==================== 日志输出配置 ====================
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+CONFIG_LOG_COLORS=y
+
+# ==================== 主任务配置 ====================
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=4096
+
+# ==================== CPU 配置 ====================
+CONFIG_ESP32_DEFAULT_CPU_FREQ_240=y
+CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ=240
+
+# ==================== 内存配置 ====================
+CONFIG_SPIRAM=y
+CONFIG_SPIRAM_SPEED_40M=y
+CONFIG_SPIRAM_USE_MALLOC=y
+
+# ==================== 开发调试配置 ====================
+CONFIG_ESP_TASK_WDT=y
+CONFIG_ESP_TASK_WDT_TIMEOUT_S=5
+
+# ==================== 文件系统配置 ====================
+CONFIG_SPIFFS_MAX_PARTITIONS=3
+CONFIG_SPIFFS_PAGE_SIZE=256
+CONFIG_SPIFFS_OBJ_NAME_LEN=32
+
+# ==================== NVS (非易失性存储) 配置 ====================
+CONFIG_NVS_ENCRYPTION=n

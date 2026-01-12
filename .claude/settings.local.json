@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(del:*)",
+      "Bash(pio device list:*)",
+      "Bash(where pio)",
+      "Bash(mode COM)",
+      "Bash(findstr:*)",
+      "Bash(driverquery:*)"
+    ]
+  }
+}
