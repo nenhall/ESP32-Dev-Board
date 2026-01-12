@@ -66,40 +66,12 @@ ESP32-Dev-Board/
 
 ### 2. 选择开发环境
 
-#### 方案 A: Arduino IDE (推荐新手) ⭐
-1. 安装 [Arduino IDE](https://www.arduino.cc/en/software)
-2. 添加 ESP32 开发板支持 (详情见文档)
-3. 打开示例代码开始开发
 
-#### 方案 B: PlatformIO (推荐有经验开发者)
+
+#### PlatformIO
 1. 安装 [VSCode](https://code.visualstudio.com/)
 2. 安装 PlatformIO 扩展
 3. 使用 `config/platformio.ini` 配置
-
-#### 方案 C: ESP-IDF (专业开发)
-1. 安装 [ESP-IDF](https://docs.espressif.com/projects/esp-idf/)
-2. 使用 `config/sdkconfig.defaults` 配置
-
-### 3. 运行第一个示例
-
-打开 [examples/blink/blink.ino](examples/blink/blink.ino):
-```cpp
-const int LED_PIN = 2;
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(LED_PIN, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(LED_PIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_PIN, LOW);
-  delay(1000);
-}
-```
-
-上传到开发板，你将看到 LED 每秒闪烁一次！
 
 ---
 
@@ -214,21 +186,6 @@ C++ 代码配置模板，包含:
 
 ---
 
-## 🤝 常见问题
-
-### Q: 找不到串口?
-**A**: 检查 CH340 驱动是否正确安装，更换 USB 线或端口
-
-### Q: 上传失败?
-**A**: 按住 BOOT 按钮再点击上传，降低上传速度
-
-### Q: Wi-Fi 连接失败?
-**A**: 确认使用 2.4GHz WiFi (不支持 5GHz)，检查密码
-
-更多问题请查看 [开发指南 - 常见问题](docs/开发指南.md#常见问题)
-
----
-
 ## 📚 参考资料
 
 ### 官方文档
@@ -266,4 +223,3 @@ C++ 代码配置模板，包含:
 
 ---
 
-**⭐ 如果这个项目对你有帮助，请给个 Star!**
