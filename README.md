@@ -4,7 +4,7 @@
 
 **开发板型号**: ESP32-WROOM-32 Dev Module
 
-**标识**: esp-32开发板 wroom wifi+蓝牙模块 CH9102 (实际芯片: CH340)
+**标识**: esp-32开发板 wroom wifi+蓝牙模块 (芯片: CH340)
 
 **PlatformIO 配置**: `board = esp32dev`
 
@@ -230,5 +230,6 @@ C++ 代码配置模板，包含:
 欢迎提交 Issue 和 Pull Request!
 
 ---
+
 
 
